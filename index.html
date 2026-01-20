@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100%;
+      margin: 0;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+      height: 100vh;
+      width: 100%;
+      background-color: #161515dd;
+      position: relative;
+    }
+    #btn {
+      width: 200px;
+      height: 100px;
+      background-color: rgb(156, 80, 255);
+      color: rgb(255, 255, 255);
+      border: none;
+      font-size: 1.2rem;
+      position: relative;
+      z-index: 9;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    #btn:active {
+      scale: 0.95;
+    }
+    h2 {
+      z-index: 9;
+      color: whitesmoke;
+      top: 0;
+      position: absolute;
+    }
+    p {
+      z-index: 9;
+      color: whitesmoke;
+      bottom: 0;
+      position: absolute;
+    }
+  </style>
+  <body>
+    <main>
+      <h2>Random Color showcase</h2>
+      <button id="btn">GENERATE!</button>
+      <p>Created by Shwe Win Aung</p>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
